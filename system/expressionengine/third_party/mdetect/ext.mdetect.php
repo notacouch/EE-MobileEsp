@@ -1,14 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-// include config file
-//require PATH_THIRD.'low_seg2cat/config.php';
-
 /**
- * Low Seg2Cat Extension class
+ * MobileEsp Extension class
  *
- * @package         low-seg2cat-ee2_addon
- * @author          Lodewijk Schutte ~ Low <hi@gotolow.com>
- * @link            http://gotolow.com/addons/low-seg2cat
+ * @author          EE Add-On: Abed Islam, MobileEsp: Hand Interactive
+ * @link            https://github.com/notacouch/EE-MobileEsp
  * @license         http://creativecommons.org/licenses/by-sa/3.0/
  */
 class Mdetect_ext {
