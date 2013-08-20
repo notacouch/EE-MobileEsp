@@ -161,10 +161,12 @@ class Mdetect_ext {
     // TRUE:FALSE provides either 1 or empty.
 
     // Basic Conditionals
-    $data['is_mobile'] = $this->mdetect->DetectMobileLong() ? TRUE : FALSE;
-    $data['is_android'] = $this->mdetect->DetectAndroid() ? TRUE : FALSE;
-    $data['is_ios'] = $this->mdetect->DetectIos() ? TRUE : FALSE;
-    $data['is_ipad'] = $this->mdetect->DetectIpad() ? TRUE : FALSE;
+    $data['is_mobile']      = $this->mdetect->DetectMobileLong() ? TRUE : FALSE;
+    $data['is_tablet']      = $this->mdetect->DetectTierTablet() ? TRUE : FALSE;
+    $data['is_android']     = $this->mdetect->DetectAndroid() ? TRUE : FALSE;
+    $data['is_not_android'] = ! $data['is_android'];
+    $data['is_ios']         = $this->mdetect->DetectIos() ? TRUE : FALSE;
+    $data['is_ipad']        = $this->mdetect->DetectIpad() ? TRUE : FALSE;
     
     // Is iOS or Android
     if ($data['is_ios'])

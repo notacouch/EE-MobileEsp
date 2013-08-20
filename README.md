@@ -12,10 +12,12 @@ This extension provides arbitary global conditionals from the above library.
 Current conditionals:
 
     {if is_mobile}
+    {if is_tablet}
     {if is_ios}
     {if is_iphone}
     {if is_ipad}
     {if is_android}
+    {if is_not_android}
 
     {if is_ios_or_android}
     {if neither_mobile_nor_ipad}
