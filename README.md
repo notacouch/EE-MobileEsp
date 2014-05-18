@@ -1,16 +1,19 @@
-MobileEsp Extension for ExpressionEngine 2.5.x
-==============================================
+# MobileEsp for ExpressionEngine <sup>[1](#user-content-notes-1), [2](#user-content-notes-2)</sup>
 
-So far all the mobile extensions that exist basically redirect you to another version of the site.
+So far all the mobile add-ons basically redirect you to another version of your site.
 
-I haven't come across any extensions that provide device or feature detection so you can alter content.
+What responsive site needs that?
 
-This is just a quick port of [MobileEsp](http://www.hand-interactive.com/detect/mobileesp_demo_php.htm) for things that I use the original PHP version for.
+What if you just want a quick check to provide a difference for user experience, site performance, etc.?
 
-This extension provides arbitary global conditionals from the above library.
+This extension provides arbitrary, early-parsed global conditionals (think [Mo Variables](https://github.com/rsanchez/mo_variables) <sup>[3](#user-content-notes-3)</sup>) using the [The MobileEsp Project](http://www.hand-interactive.com/detect/mobileesp_demo_php.htm).
 
-Current conditionals:
 
+## Installation
+
+If you haven't changed where your add-ons are installed, copy the `mdetect` directory into your `system/expressionengine/third_party` directory.
+
+## Conditionals
 
     {if is_android}
     {if is_ios}
@@ -33,3 +36,9 @@ Current conditionals:
     {if is_ios_or_android}
     {if neither_mobile_nor_ipad}
     {if neither_mobile_android_nor_ios}
+
+### Notes
+
+1. <a name="user-content-notes-1"></a> Initially developed in EE 2.5, compatible with EE 2.8 
+2. <a name="user-content-notes-2"></a> Though the project is named EE-MobileEsp, the add-on itself goes by `mdetect`
+3. <a name="user-content-notes-3"></a> Mo Variables recently added mobile detection, while I haven't encountered any conflicts you may want to leave its mobile detection off in its Extension Settings.
